@@ -1,0 +1,20 @@
+button {
+	position: relative;
+	overflow: hidden;
+}
+
+.ripple {
+	transform: scale(0);
+	animation: ripple-animation 0.6s linear;
+}
+
+.animate-ripple .ripple {
+	transform: scale(1);
+}
+
+@keyframes ripple-animation {
+	to {
+		transform: scale(4);
+		opacity: 0;
+	}
+}
